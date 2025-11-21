@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Form Validator</title>
 </head>
+
 <body>
-   
-         <form id="form" action="www.google.com">
-             <input type="text" placeholder="Full Name">
-             <input type="email" placeholder="Your Email">
-             <input type="password" placeholder="Your Password">
-             <input type="password" placeholder="Re-Enter password">
-             <button>submit</button>
-             
-         </form>
-    
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <span class="errormessage" id="nameError"></span>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <span class="errormessage" id="emailError"></span>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <span class="errormessage" id="passwordError"></span>
+
+        <button type="Submit">Submit</button>
+         
+        <h3 id="successMessage"></h3>
+
+    </form>
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
